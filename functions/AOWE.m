@@ -143,7 +143,7 @@ function [fitness, alpha_value, beta_value, gamma_value, error1] = compute_fitne
     s_acc = std(accuracy_list);
 
     % Compute diversity measure
-    D = double_fault1(Y, ytest);
+    D = Convert_To_Pair_double_fault(Y, ytest);
 
     % Compute weights based on diversity measures
     f1 = @(x) (2/pi) * atan(1./(k*x));
