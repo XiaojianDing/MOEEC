@@ -1,4 +1,3 @@
-
 clc;
 clear;
 addpath(genpath('./'));
@@ -71,9 +70,6 @@ for i=3
         recall(runs) = TP / (TP + FN);
         precision(runs) = TP / (TP + FP);
         F1(runs) = 2 * (precision(runs) * recall(runs)) / (precision(runs) + recall(runs));
-        alpha_last(runs) = alpha_values(iteration);
-        beta_last(runs) = beta_values(iteration);
-        gamma_last(runs) = gamma_values(iteration);
     end
 
     % Save results for the current dataset
