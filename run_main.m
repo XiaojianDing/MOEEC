@@ -17,6 +17,7 @@ results = cell(length(datasets), 1);
 % k_values=[1,3,5,7,9];
 
 
+
 for i=3
     m = 10;
     k = 1;
@@ -82,8 +83,7 @@ for i=3
     result.(datasets{i}).acc_values = acc;  % Save the acc array
     result.(datasets{i}).recall_values = recall;
     result.(datasets{i}).F1_values = F1;
-    result.(datasets{i}).iterations = iteration;
-    result.(datasets{i}).global_bestfitness = best_fitnesss;
+
 
     results{i} = result;
     disp(['c_number: ', num2str(m)]);
