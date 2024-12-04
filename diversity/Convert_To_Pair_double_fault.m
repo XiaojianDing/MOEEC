@@ -9,7 +9,7 @@
 % P=mean(li);
 % D = 1 / (N * L * (L - 1)) * sum(li .^ 2) - 1 / L - P + 1;
 % end
-function DF = double_fault1(errorMatrix,ytest)
+function DF = Convert_To_Pair_double_fault(errorMatrix,ytest)
     % N 是数据集中的样本数量
     % L 是分类器的数量
     % errorMatrix 是一个N x L的矩阵，其中如果分类器j在样本i上分类错误，则errorMatrix(i,j) = 1，否则为0
